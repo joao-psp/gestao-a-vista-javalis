@@ -1,4 +1,4 @@
-# Gestão a vista CURINGAS
+# Gestão a vista ORIGEM
 
 É uma aplicação em react para a gestão a vista da dti.
 
