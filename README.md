@@ -1,6 +1,6 @@
 # Gestão a vista ORIGEM
 
-É uma aplicação em react para a gestão a vista da dti.
+É uma aplicação em react para a gestão a vista da dti desenvolvido inicialmente pela tribo Curingas!
 
 ### Crie um fork para usar na sua tribo!
 
