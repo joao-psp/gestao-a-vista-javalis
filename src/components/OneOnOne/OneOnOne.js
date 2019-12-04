@@ -5,7 +5,7 @@ import OrigemRepo from '../../repos/OrigemRepo';
 import ItemOneOnOne from './ItemOneOnOne';
 import * as _ from 'lodash';
 
-import NamesRide from '../../repos/ConstantsNames';
+import Names from '../../repos/ConstantsNames';
 
 const styles = theme => ({
     card: {
@@ -25,7 +25,7 @@ class OneOnOne extends React.Component {
             let squadsRide = [];
             if (crafters) {
                 crafters.forEach(crafter => {
-                    NamesRide.forEach(name => {
+                    Names.forEach(name => {
                         if (crafter.name === name.name) {
                             squadsRide.push(crafter);
                         }

@@ -5,6 +5,7 @@ import moment from 'moment';
 
 export const ItemRito = props => {
     const squad = props.squad;
+    let timeSprint = squad.Squad === 'Origem - Ride Sharing - Vida Boa' ? 21 : 14;
     return [
         <Grid key='a' item container xs={2} style={{ minHeight: 160 }}>
             <Grid item container justify='center' direction='column'>
@@ -32,14 +33,14 @@ export const ItemRito = props => {
                     }
                 </Typography>
             </Grid>
-            {dateCell(squad.CheckArquitetural)}
-            {dateCell(squad.CheckExecucao)}
-            {dateCell(squad.RetroSprint)}
+            {dateCell(squad.CheckArquitetural, timeSprint)}
+            {dateCell(squad.CheckExecucao, timeSprint)}
+            {dateCell(squad.RetroSprint, timeSprint)}
         </Grid>
     ];
 };
 
-const dateCell = data => {
+const dateCell = (data,timeSprint) => {
     return (
         <Grid
             item
@@ -57,7 +58,7 @@ const dateCell = data => {
                 <Typography variant='h6' style={{ color: '#ffffff', fontWeight: 400 }}>
                     Próximo:{' '}
                     {moment(data)
-                        .add(14, 'days')
+                        .add(timeSprint, 'days')
                         .format('DD/MM/YY')}
                 </Typography>
             )}
