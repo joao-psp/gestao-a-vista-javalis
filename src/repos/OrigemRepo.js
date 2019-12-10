@@ -5,7 +5,7 @@ import moment from 'moment';
 class OrigemRepo {
     listarOrigem() {
         return axios
-            .get(`https://one-on-ones-dti.herokuapp.com/api/data_tribe/RACkers%20(Loc-RAC)`)
+            .get(`https://one-on-ones-dti.herokuapp.com/api/data_tribe/Origem`)
             .then(response => {
                 return response.data.crafters;
             })
