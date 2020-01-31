@@ -1,0 +1,8 @@
+@import "~@angular/material/theming";
+@import "../theme/theme-variables.scss";
+
+@mixin gav-mat-button-component-theme($theme) {
+  .mat-button-focus-overlay {
+    background: mat-color(map-get($theme, background), background);
+  }
+}

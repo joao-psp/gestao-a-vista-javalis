@@ -1,0 +1,32 @@
+<mat-card class="mat-card--blurred cliente">
+  <img
+    class="logo"
+    src="assets/img/clientes/{{ cliente.logo }}.png"
+    [alt]="cliente.nome"
+  />
+  <div class="numeros">
+    <div class="indicador">
+      <p class="numero">
+        {{ cliente.numeroSquads }}
+        <span class="label" *ngIf="cliente.numeroSquads != 1">squads</span>
+        <span class="label" *ngIf="cliente.numeroSquads == 1">squad</span>
+      </p>
+    </div>
+    <div class="indicador">
+      <p class="numero">
+        {{ cliente.numeroCrafters }}
+        <span class="label" *ngIf="cliente.numeroCrafters != 1">crafters</span>
+        <span class="label" *ngIf="cliente.numeroCrafters == 1">crafter</span>
+      </p>
+    </div>
+  </div>
+  <div class="vagas" *ngIf="cliente.vagas.length > 0">
+    <p class="label">vagas</p>
+    <div class="lista-vagas">
+      <div class="vaga" *ngFor="let vaga of cliente.vagas">
+        <span class="quantidade">{{ vaga.quantidade }}</span>
+        <span class="nome">{{ vaga.nome }}</span>
+      </div>
+    </div>
+  </div>
+</mat-card>

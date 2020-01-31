@@ -1,0 +1,27 @@
+@import "~@angular/material/theming";
+@import "../../../../assets/styles/theme/theme-variables.scss";
+
+@mixin gav-colaboradores-component-theme($theme) {
+  app-colaboradores {
+    .mat-card {
+      background-color: mat-color(map-get($theme, background), background, 0.6);
+    }
+
+    .colaboradores {
+      .colaborador {
+        &::after {
+          content: "";
+          background-color: mat-color(map-get($theme, primary), 800, 0.01);
+        }
+
+        .nome {
+          background-color: mat-color(
+            map-get($theme, background),
+            background,
+            0.9
+          );
+        }
+      }
+    }
+  }
+}

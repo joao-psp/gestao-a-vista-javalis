@@ -1,0 +1,38 @@
+@import "../../../../assets/styles/theme/theme-variables.scss";
+
+:host {
+  display: flex;
+  flex: 1;
+  .burndown {
+    display: flex;
+    flex: 1;
+    position: relative;
+
+    .chart-container {
+      position: absolute;
+      top: 0;
+      left: -2.5rem;
+      right: -2.5rem;
+      bottom: -2.5rem;
+      z-index: 1;
+    }
+
+    .informacoes-sprint {
+      padding: 16px 16px 24px;
+      position: absolute;
+      bottom: 40px;
+      left: 64px;
+      z-index: 2;
+
+      .numero-sprint {
+        font-weight: 600;
+        font-size: 1rem;
+        display: block;
+      }
+
+      .situacao-atual {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+<div class="container home">
+  <div class="painel-principal">
+    <img class="imagem-principal" src="assets/img/rubiks.png" alt="rubix" />
+    <span class="tribo">Tribo</span>
+    <span class="nome-tribo">Triforce</span>
+  </div>
+
+  <div class="indicadores">
+    <div class="indicador">
+      <span class="numero" *ngIf="!loadingAderenciaRitos">{{
+        aderenciaRitos
+      }}</span>
+      <app-loading *ngIf="loadingAderenciaRitos"></app-loading>
+      <span class="nome">aderência</span>
+    </div>
+
+    <div class="indicador">
+      <span class="numero" *ngIf="!loadingAderenciaOneOne">{{
+        aderenciaOneOnOne
+      }}</span>
+      <app-loading *ngIf="loadingAderenciaOneOne"></app-loading>
+      <span class="nome">one on ones</span>
+    </div>
+  </div>
+
+  <hr class="detalhe detalhe-1" />
+  <hr class="detalhe detalhe-2" />
+</div>

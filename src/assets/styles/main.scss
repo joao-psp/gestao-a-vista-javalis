@@ -1,0 +1,33 @@
+@import "./theme/theme-variables.scss";
+// Theme variables, must be included before the libraries to allow overriding defaults
+@import "./theme/theme";
+
+$material-design-icons-font-directory-path: "~material-design-icons-iconfont/dist/fonts/";
+@import "~material-design-icons-iconfont/src/material-design-icons";
+
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
+
+@import "./base/mixins";
+@import "./components/all";
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container-full-page {
+  position: relative;
+  overflow: hidden;
+  font-size: 16px;
+  padding: 4rem;
+  height: 100vh;
+  width: 100vw;
+}

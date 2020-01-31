@@ -1,0 +1,14 @@
+@import "~@angular/material/theming";
+@import "../../../../assets/styles/theme/theme-variables.scss";
+
+@mixin gav-tecnologias-component-theme($theme) {
+  app-tecnologias {
+    .tecnologias {
+      .tecnologia {
+        img {
+          opacity: $text-opacity; // TODO: converter tecnologias para svg para usar mat-color(map-get($theme, foreground), text, $text-opacity);
+        }
+      }
+    }
+  }
+}

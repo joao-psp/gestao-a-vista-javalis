@@ -1,0 +1,46 @@
+<mat-card class="mat-card-page mat-card--blurred okr">
+  <div class="card-header">
+    <span class="card-title">OKR's da {{ okrable.nome }}</span>
+  </div>
+  <div class="grid-objetivo">
+    <div class="objetivo" *ngFor="let objetivo of okrable.objetivos">
+      <p>{{ objetivo.descricao }}</p>
+      <div
+        class="resultado-chave"
+        *ngFor="let resultado of objetivo.resultadosChave; let i = index"
+      >
+        <div class="numero">KR{{ i + 1 }}</div>
+        <div class="descricao">{{ resultado.descricao }}</div>
+        <div class="progresso">
+          {{ resultado.progresso | percent }}
+        </div>
+        <div class="track">
+          <div class="track-barra avanco" [style.flex]="resultado.progresso">
+            &nbsp;
+          </div>
+          <div
+            class="track-barra faltante"
+            [style.flex]="1 - resultado.progresso"
+          >
+            &nbsp;
+          </div>
+          <div
+            class="cubo"
+            [class.mounted]="resultado.progresso === 1"
+            [class.semimounted]="
+              resultado.progresso >= 0.5 && resultado.progresso < 1
+            "
+            [class.unmounted]="resultado.progresso < 0.5"
+            [style.left]="
+              resultado.progresso > 0.95
+                ? '95%'
+                : 100 * resultado.progresso - 2 + '%'
+            "
+          >
+            &nbsp;
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</mat-card>

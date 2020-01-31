@@ -1,0 +1,25 @@
+@import "~@angular/material/theming";
+@import "../../../../assets/styles/theme/theme-variables.scss";
+
+@mixin createColorVar($colorName, $color) {
+  --indicador-box-shadow-color-#{$colorName}: #{$color};
+  --indicador-box-shadow-color-#{$colorName}-darken-full: #{darken($color, 40%)};
+  --indicador-box-shadow-color-#{$colorName}-darken-medium: #{darken(
+      $color,
+      20%
+    )};
+}
+
+@mixin gav-indicador-component-theme($theme) {
+  app-indicador {
+    --indicador-box-shadow-color: #{mat-color(
+        map-get($theme, foreground),
+        elevation,
+        0.2
+      )};
+
+    @include createColorVar("perigo", mat-color(map-get($theme, warn)));
+    @include createColorVar("atencao", mat-color(map-get($theme, attention)));
+    @include createColorVar("sucesso", mat-color(map-get($theme, success)));
+  }
+}

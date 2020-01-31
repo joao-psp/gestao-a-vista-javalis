@@ -1,0 +1,36 @@
+@import "~@angular/material/theming";
+@import "../../assets/styles/theme/theme-variables.scss";
+
+@mixin gav-okr-component-theme($theme) {
+  app-okr {
+    .okr {
+      .grid-objetivo {
+        .objetivo {
+          & > p {
+            color: mat-color(map-get($theme, foreground), text, $text-opacity);
+          }
+          .resultado-chave {
+            .track {
+              &-barra {
+                &.avanco {
+                  background-color: mat-color(
+                    map-get($theme, accent),
+                    default,
+                    0.8
+                  );
+                }
+                &.faltante {
+                  background-color: mat-color(
+                    map-get($theme, background),
+                    background,
+                    0.3
+                  );
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

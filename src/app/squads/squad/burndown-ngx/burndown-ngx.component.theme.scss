@@ -1,0 +1,86 @@
+@import "~@angular/material/theming";
+@import "../../../../assets/styles/theme/theme-variables.scss";
+
+@mixin gav-burndown-ngx-component-theme($theme) {
+  $primary-color-opacity: mat-color(
+    map-get($theme, primary),
+    300,
+    $text-opacity
+  );
+  $primary-color-no-opacity: mat-color(map-get($theme, primary), 300);
+  $accent-color-opacity: mat-color(map-get($theme, accent), 300, $text-opacity);
+  $accent-color-no-opacity: mat-color(map-get($theme, accent), 300);
+  app-burndown-ngx {
+    .primary-gradient-start {
+      stop-color: $primary-color-no-opacity;
+    }
+    .accent-gradient-start {
+      stop-color: $accent-color-no-opacity;
+    }
+    .gradient-end {
+      stop-color: mat-color(map-get($theme, background), background, 0);
+    }
+    .burndown {
+      .chart-container {
+        g.area-chart,
+        g[ngx-charts-timeline] {
+          & > g[clip-path] {
+            & > g:first-child {
+              path.area {
+                fill: $primary-color-opacity;
+              }
+            }
+            & > g:nth-child(2) {
+              path.area {
+                fill: $accent-color-opacity;
+              }
+            }
+            & > g:last-child {
+              & > g:nth-child(2) {
+                .tooltip-bar {
+                  fill: url(#primary-gradient);
+                }
+                circle {
+                  fill: $primary-color-no-opacity;
+                }
+              }
+              & > g:nth-child(3) {
+                .tooltip-bar {
+                  fill: url(#accent-gradient);
+                }
+                circle {
+                  fill: $accent-color-no-opacity;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .informacoes-sprint {
+        background-color: mat-color(
+          map-get($theme, background),
+          background,
+          0.1
+        );
+
+        .numero-sprint {
+          opacity: 0.8;
+        }
+
+        .situacao-atual {
+          color: mat-color(map-get($theme, foreground), text, $text-opacity);
+        }
+      }
+    }
+  }
+
+  .area-tooltip-container {
+    .tooltip-item:first-child > .tooltip-item-color {
+      background-color: mat-color(map-get($theme, primary), 300) !important;
+    }
+    .tooltip-item:last-child > .tooltip-item-color {
+      background-color: mat-color(map-get($theme, accent), 300) !important;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+.mat-card {
+  border-radius: 0;
+  overflow: hidden;
+
+  &.mat-card-page {
+    padding: 0;
+    height: calc(100vh - 8em);
+    flex-direction: column;
+    min-height: 500px;
+    display: block;
+    display: flex;
+
+    .card-header {
+      margin-bottom: 2rem;
+
+      .card-subtitle {
+        text-transform: capitalize;
+        margin-bottom: 4px;
+        font-weight: bold;
+        font-size: 2rem;
+        display: block;
+      }
+
+      .card-title {
+        font-weight: bold;
+        font-size: 4rem;
+        display: block;
+      }
+    }
+  }
+
+  &--blurred {
+    &--yellow::after {
+      filter: blur(70px);
+    }
+
+    &--green::after {
+      filter: blur(70px);
+    }
+
+    &--red::after {
+      filter: blur(70px);
+    }
+
+    & > * {
+      position: relative;
+      z-index: 1;
+    }
+  }
+}

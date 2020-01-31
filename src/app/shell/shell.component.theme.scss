@@ -1,0 +1,32 @@
+@import "~@angular/material/theming";
+@import "../../assets/styles/theme/theme-variables.scss";
+
+@mixin gav-shell-component-theme($theme) {
+  app-shell {
+    .has-border {
+      border-right-color: mat-color(
+        map-get($theme, foreground),
+        elevation,
+        0.12
+      );
+    }
+
+    .mat-list-item {
+      &:hover {
+        background: mat-color(map-get($theme, background), background, 0.05);
+      }
+    }
+
+    .shell {
+      $start-color: mat-color(map-get($theme, primary), 700);
+      $middle-color: mat-color(map-get($theme, primary), A300);
+      $end-color: mat-color(map-get($theme, primary), 900);
+      background: linear-gradient(
+        to right,
+        $start-color,
+        $middle-color,
+        $end-color
+      );
+    }
+  }
+}

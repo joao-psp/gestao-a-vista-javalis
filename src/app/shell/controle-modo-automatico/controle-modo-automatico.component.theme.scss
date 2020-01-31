@@ -1,0 +1,7 @@
+@import "~@angular/material/theming";
+@import "../../../assets/styles/theme/theme-variables.scss";
+
+@mixin gav-controle-modo-automatico-component-theme($theme) {
+  app-controle-modo-automatico {
+  }
+}

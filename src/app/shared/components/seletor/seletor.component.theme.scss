@@ -1,0 +1,17 @@
+@import "~@angular/material/theming";
+@import "../../../../assets/styles/theme/theme-variables.scss";
+
+@mixin gav-seletor-component-theme($theme) {
+  app-seletor {
+    .seletor {
+      .mat-button {
+        border-color: mat-color(map-get($theme, foreground), base);
+
+        &.opcao-selecionada {
+          background-color: mat-color(map-get($theme, foreground), base);
+          color: mat-contrast(map-get($theme, primary), 50);
+        }
+      }
+    }
+  }
+}

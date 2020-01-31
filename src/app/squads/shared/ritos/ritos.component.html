@@ -1,0 +1,12 @@
+<div class="ritos">
+  <div class="rito" *ngFor="let rito of ritos">
+    <div class="header">
+      <span class="sigla">{{ rito.sigla }}</span>
+      <app-indicador
+        *ngIf="mapaDeCores[rito.status]"
+        [cor]="mapaDeCores[rito.status]"
+      ></app-indicador>
+    </div>
+    <span class="data">{{ rito.data | date: 'dd/MM' }}</span>
+  </div>
+</div>

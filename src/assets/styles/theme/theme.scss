@@ -1,0 +1,35 @@
+@import "./themes/rubix-theme.scss";
+@import "./themes/default-theme.scss";
+@import "./theme-components.scss";
+
+$default-success-palette: mat-palette($mat-green);
+$default-attention-palette: mat-palette($mat-yellow);
+
+@mixin apply-theme($theme-name: "default", $theme: $app-theme) {
+  @if (not map-has-key($theme, success)) {
+    $theme: map-merge(
+      $theme,
+      (
+        success: $default-success-palette
+      )
+    );
+  }
+  @if (not map-has-key($theme, attention)) {
+    $theme: map-merge(
+      $theme,
+      (
+        attention: $default-attention-palette
+      )
+    );
+  }
+  .#{$theme-name}-theme {
+    @include angular-material-theme($theme);
+    @include gav-components-theme($theme);
+
+    color: mat-color(map-get($theme, foreground), text);
+  }
+}
+
+@include mat-core();
+@include apply-theme();
+@include apply-theme("rubix", $rubix-theme);

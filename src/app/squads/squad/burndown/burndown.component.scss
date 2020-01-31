@@ -1,0 +1,23 @@
+@import "../../../../assets/styles/theme/theme-variables.scss";
+
+.burndown {
+  display: block;
+  height: 300px;
+
+  .informacoes-sprint {
+    padding: 16px 16px 24px;
+    position: absolute;
+    bottom: 40px;
+    left: 64px;
+  }
+
+  .numero-sprint {
+    font-weight: 600;
+    font-size: 1rem;
+    display: block;
+  }
+
+  .situacao-atual {
+    font-size: 0.8rem;
+  }
+}

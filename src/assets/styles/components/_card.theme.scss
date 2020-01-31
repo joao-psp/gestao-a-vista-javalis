@@ -1,0 +1,39 @@
+@import "~@angular/material/theming";
+@import "../theme/theme-variables.scss";
+
+@mixin gav-mat-card-component-theme($theme) {
+  .mat-card {
+    background-color: transparent;
+    &.mat-card-page {
+      .card-header {
+        .card-subtitle {
+          color: mat-color(map-get($theme, foreground), text, $text-opacity);
+        }
+      }
+    }
+
+    &--blurred {
+      background-color: mat-color(map-get($theme, background), background, 0.1);
+
+      &--darker {
+        background-color: mat-color(
+          map-get($theme, background),
+          background,
+          0.2
+        );
+      }
+
+      &--yellow::after {
+        background-color: mat-color(map-get($theme, accent));
+      }
+
+      &--green::after {
+        background-color: mat-color(map-get($theme, success));
+      }
+
+      &--red::after {
+        background-color: mat-color(map-get($theme, warn));
+      }
+    }
+  }
+}

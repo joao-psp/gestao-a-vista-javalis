@@ -1,0 +1,14 @@
+<mat-card class="mat-card--blurred">
+  <app-glide class="colaboradores glider-full" [glideOptions]="glideOptions">
+    <app-glide-element
+      class="colaborador"
+      *ngFor="let colaborador of colaboradores"
+    >
+      <img
+        src="assets/img/colaboradores/{{ colaborador.id }}.jpg"
+        [alt]="colaborador.nome"
+      />
+      <span class="nome">{{ colaborador.nome }}</span>
+    </app-glide-element>
+  </app-glide>
+</mat-card>

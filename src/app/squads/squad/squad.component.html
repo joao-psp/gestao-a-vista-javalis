@@ -1,0 +1,40 @@
+<mat-card class="mat-card-page mat-card--blurred squad">
+  <div class="conteudo">
+    <div class="projeto">
+      <div class="card-header">
+        <span class="card-subtitle">{{ squad.cliente.nome }}</span>
+        <span class="card-title">{{ squad.nome }}</span>
+      </div>
+      <app-tecnologias [tecnologias]="squad.tecnologias"></app-tecnologias>
+      <app-burndown-ngx [burndown]="squad.burndown"></app-burndown-ngx>
+    </div>
+    <mat-card class="mat-card--blurred informacoes">
+      <mat-tab-group
+        class="mat-tab-group--no-header mat-tab-group--stretched"
+        [(selectedIndex)]="opcaoSelecionada"
+      >
+        <mat-tab>
+          <div class="ritos-planos">
+            <app-ritos [ritos]="squad.ritos"></app-ritos>
+            <app-plano-de-acoes
+              [planoDeAcoes]="squad.planoDeAcoes"
+            ></app-plano-de-acoes>
+          </div>
+        </mat-tab>
+        <mat-tab>
+          <app-fatos-relevantes
+            [fatosRelevantes]="squad.fatosRelevantes"
+          ></app-fatos-relevantes>
+        </mat-tab>
+      </mat-tab-group>
+      <app-seletor
+        [opcoes]="['Ações', 'Fatos']"
+        [(opcaoSelecionada)]="opcaoSelecionada"
+      ></app-seletor>
+    </mat-card>
+  </div>
+  <app-colaboradores
+    [squadId]="squad.id"
+    [colaboradores]="squad.colaboradores"
+  ></app-colaboradores>
+</mat-card>

@@ -1,0 +1,12 @@
+.eventos {
+  .grid {
+    display: grid;
+    grid-template-columns: 374px 374px 374px;
+    grid-gap: 16px;
+  }
+  .conteudo {
+    width: 100%;
+    height: 100%;
+    padding: 2.5rem;
+  }
+}

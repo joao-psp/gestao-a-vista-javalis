@@ -1,0 +1,27 @@
+@import "~@angular/material/theming";
+@import "../../../../assets/styles/theme/theme-variables.scss";
+
+@mixin gav-plano-de-acoes-component-theme($theme) {
+  app-plano-de-acoes {
+    .plano-de-acoes {
+      .acao {
+        border-bottom-color: mat-color(map-get($theme, foreground), text, 0.1);
+        .conteudo {
+          .responsavel-data {
+            color: mat-color(map-get($theme, foreground), text, $text-opacity);
+          }
+        }
+
+        mat-icon {
+          color: mat-color(map-get($theme, foreground), text, $text-opacity);
+        }
+
+        &--concluida {
+          .conteudo {
+            color: mat-color(map-get($theme, foreground), text, $text-opacity);
+          }
+        }
+      }
+    }
+  }
+}

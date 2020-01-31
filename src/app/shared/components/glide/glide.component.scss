@@ -1,0 +1,42 @@
+@import "../../../../assets/styles/base/mixins";
+
+:host {
+  display: block;
+  &.glider-full {
+    .glide__track,
+    .glide__slides,
+    .glide__slide {
+      overflow: hidden;
+      height: 100%;
+      @include transition();
+    }
+    &:hover {
+      .glide__slides {
+        transform: translate3d(0, 0, 0) !important;
+        width: 100% !important;
+      }
+    }
+  }
+  .glide__bullets {
+    justify-content: center;
+    padding: 16px;
+    display: flex;
+
+    .glide__bullet {
+      border-radius: 2px;
+      margin-right: 2px;
+      cursor: pointer;
+      outline: none;
+      border: none;
+      height: 4px;
+      width: 16px;
+      padding: 0;
+
+      @include transition();
+
+      &--active {
+        width: 24px;
+      }
+    }
+  }
+}

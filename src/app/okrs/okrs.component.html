@@ -1,0 +1,7 @@
+<div class="container-full-page">
+  <app-glide [glideOptions]="glideOptions">
+    <app-glide-element *ngFor="let okrable of okrables">
+      <app-okr [okrable]="okrable"></app-okr>
+    </app-glide-element>
+  </app-glide>
+</div>

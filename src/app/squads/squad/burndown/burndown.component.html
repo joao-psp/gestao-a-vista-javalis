@@ -1,0 +1,16 @@
+<div class="burndown">
+  <div class="informacoes-sprint" *ngIf="burndown">
+    <span class="numero-sprint">Sprint {{ burndown.numeroSprint }}</span>
+    <span class="situacao-atual">{{ burndown.situacaoAtual }} pts</span>
+  </div>
+  <canvas
+    baseChart
+    #canvasElement
+    [legend]="false"
+    [labels]="chartLabels"
+    [datasets]="chartData"
+    [options]="chartOptions"
+    chartType="line"
+  >
+  </canvas>
+</div>

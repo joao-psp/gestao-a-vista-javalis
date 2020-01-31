@@ -1,0 +1,72 @@
+@import "../../../assets/styles/base/mixins";
+
+.squad {
+  padding-right: 200px;
+
+  .conteudo {
+    display: flex;
+    height: 100%;
+
+    .projeto {
+      position: relative;
+      padding: 2.5rem;
+      flex: 1;
+      display: flex;
+      flex-flow: column nowrap;
+
+      app-burndown {
+        flex: 1;
+      }
+    }
+  }
+
+  .informacoes {
+    flex-direction: column;
+    display: flex;
+    padding: 0;
+    flex: 1;
+
+    mat-tab-group {
+      overflow: hidden;
+      height: 100%;
+    }
+
+    app-seletor {
+      margin: 16px auto;
+      display: block;
+    }
+
+    .ritos-planos {
+      flex-direction: column;
+      display: flex;
+      height: 100%;
+
+      app-ritos {
+        display: block;
+        flex: 0;
+      }
+
+      app-plano-de-acoes {
+        overflow: auto;
+        display: block;
+        flex: 1;
+      }
+    }
+  }
+
+  app-colaboradores {
+    flex-direction: column;
+    position: absolute;
+    display: flex;
+    width: 200px;
+    bottom: 0;
+    right: 0;
+    top: 0;
+
+    @include transition(width);
+
+    &:hover {
+      width: 100%;
+    }
+  }
+}

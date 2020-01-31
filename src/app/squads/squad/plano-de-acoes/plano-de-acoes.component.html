@@ -1,0 +1,15 @@
+<div class="plano-de-acoes">
+  <div
+    class="acao"
+    [ngClass]="{ 'acao--concluida': acao.concluida }"
+    *ngFor="let acao of planoDeAcoes?.acoes"
+  >
+    <mat-icon>{{ acao.concluida ? 'check_circle' : 'schedule' }}</mat-icon>
+    <div class="conteudo">
+      <span class="descricao">{{ acao.acao }}</span>
+      <span class="responsavel-data"
+        >{{ acao.responsavel }} - {{ acao.data | date: 'dd/MM' }}</span
+      >
+    </div>
+  </div>
+</div>

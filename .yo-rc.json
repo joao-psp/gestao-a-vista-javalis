@@ -1,0 +1,26 @@
+{
+  "generator-ngx-rocket": {
+    "version": "7.0.1",
+    "props": {
+      "location": "path",
+      "strict": false,
+      "skipInstall": false,
+      "skipQuickstart": false,
+      "initGit": true,
+      "target": ["web"],
+      "pwa": false,
+      "ui": "material",
+      "layout": "simple",
+      "auth": false,
+      "lazy": false,
+      "angulartics": false,
+      "tools": ["prettier", "hads"],
+      "utility": [],
+      "appName": "triforce-gestao-a-vista",
+      "projectName": "triforce-gestao-a-vista",
+      "packageManager": "npm",
+      "mobile": [],
+      "desktop": []
+    }
+  }
+}

@@ -1,0 +1,20 @@
+@import "~@angular/material/theming";
+@import "../../../../assets/styles/theme/theme-variables.scss";
+
+@mixin gav-glide-component-theme($theme) {
+  app-glide {
+    .glide__bullets {
+      .glide__bullet {
+        background-color: mat-color(
+          map-get($theme, foreground),
+          base,
+          $text-opacity
+        );
+
+        &--active {
+          background-color: mat-color(map-get($theme, foreground), base);
+        }
+      }
+    }
+  }
+}

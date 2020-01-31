@@ -1,0 +1,7 @@
+@import "~@angular/material/theming";
+
+$app-primary: mat-palette($mat-blue);
+$app-accent: mat-palette($mat-orange);
+$app-warn: mat-palette($mat-red);
+
+$app-theme: gav-theme($app-primary, $app-accent, $app-warn);

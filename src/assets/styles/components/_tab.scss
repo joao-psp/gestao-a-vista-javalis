@@ -1,0 +1,22 @@
+.mat-tab-group {
+  &--no-header {
+    .mat-tab-header {
+      display: none;
+    }
+  }
+
+  &--stretched {
+    height: 100%;
+
+    .mat-tab-body-content,
+    .mat-tab-body-wrapper {
+      height: 100%;
+    }
+
+    .mat-tab-body-column {
+      flex-direction: column;
+      display: flex;
+      height: 100%;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+@import "~@angular/material/theming";
+@import "../../../../assets/styles/theme/theme-variables.scss";
+
+@mixin gav-burndown-component-theme($theme) {
+  app-burndown {
+    .burndown {
+      .informacoes-sprint {
+        background-color: mat-color(
+          map-get($theme, background),
+          background,
+          0.1
+        );
+      }
+
+      .numero-sprint {
+        opacity: 0.8;
+      }
+
+      .situacao-atual {
+        color: mat-color(map-get($theme, foreground), text, $text-opacity);
+      }
+    }
+  }
+}

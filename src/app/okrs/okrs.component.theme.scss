@@ -1,0 +1,7 @@
+@import "~@angular/material/theming";
+@import "../../assets/styles/theme/theme-variables.scss";
+
+@mixin gav-okrs-component-theme($theme) {
+  app-okrs {
+  }
+}
