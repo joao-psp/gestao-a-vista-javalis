@@ -12,7 +12,7 @@ export class OneOnOneService {
   constructor(private http: HttpClient) {}
 
   public recuperar(): Observable<OneOnOne> {
-    let url = environment.oneOnOne.replace('{tribo}', 'Triforce');
+    let url = environment.oneOnOne.replace('{tribo}', 'Suricatos');
     let oneOnOne: OneOnOne;
     return this.http.get<OneOnOne>(url).pipe(
       timeout(3000),

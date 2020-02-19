@@ -11,7 +11,7 @@ import { Cliente } from '@app/shared/models/cliente.model';
 })
 export class OkrsService {
   private okrables: Okrable[] = [
-    new Tribo('Rubix', [
+    new Tribo('Suricatos', [
       new Objetivo('Melhorar a relação de confiança com o cliente', [
         new ResultadoChave(
           '100% dos SQUADs atuando pelo menos 1 dia da sprint com o cliente',
@@ -31,7 +31,7 @@ export class OkrsService {
         ),
         new ResultadoChave(
           'Realizar pelo menos 6 eventos para compartilhar o conhecimento da tribo com a DTI',
-          0.50
+          0.5
         ),
         new ResultadoChave(
           'Realizar pelo menos 1 post por SQUAD nas redes sociais da DTI (Divulgação de cases, blogposts)',
@@ -59,7 +59,7 @@ export class OkrsService {
       new Objetivo('Aumentar o conhecimento do negócio da Falconi', [
         new ResultadoChave(
           '100% dos integrantes concluindo os cursos de GPD e Solução de Problemas da Academia Falconi',
-          0.40
+          0.4
         ),
         new ResultadoChave(
           'Realizar 1 tech shot aberto ao público sobre PDCA Ágil (Marina Cavalieri)',

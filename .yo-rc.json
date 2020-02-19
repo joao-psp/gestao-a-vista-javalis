@@ -16,8 +16,8 @@
       "angulartics": false,
       "tools": ["prettier", "hads"],
       "utility": [],
-      "appName": "triforce-gestao-a-vista",
-      "projectName": "triforce-gestao-a-vista",
+      "appName": "suricatos-gestao-a-vista",
+      "projectName": "suricatos-gestao-a-vista",
       "packageManager": "npm",
       "mobile": [],
       "desktop": []

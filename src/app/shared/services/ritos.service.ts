@@ -13,7 +13,7 @@ export class RitosService {
 
   public obterAderencia() {
     const rangeAderencia = 'aderenciatribos';
-    const tribo = 'Triforce';
+    const tribo = 'Suricatos';
 
     const colunas = {
       nome: 0,

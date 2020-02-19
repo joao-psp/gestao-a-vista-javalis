@@ -1,11 +1,11 @@
 {
-  "name": "triforce-gestao-a-vista",
+  "name": "suricatos-gestao-a-vista",
   "version": "1.0.0",
   "private": true,
   "scripts": {
     "ng": "ng",
     "build": "npm run env -s && ng build --prod",
-    "build-and-publish": "ng build --prod --base-href https://triforce-gestao-a-vista.herokuapp.com/ && ngh ",
+    "build-and-publish": "ng build --prod --base-href https://suricatos-gestao-a-vista.herokuapp.com/ && ngh ",
     "start": "npm run env -s && ng serve --proxy-config proxy.conf.js && node server.js",
     "lint": "ng lint && stylelint \"src/**/*.scss\" --syntax scss && htmlhint \"src\" --config .htmlhintrc",
     "test": "npm run env -s && ng test",
