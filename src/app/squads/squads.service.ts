@@ -20,127 +20,182 @@ export class SquadsService {
   private squads: Squad[] = [
     new Squad(
       1,
-      'Smart Rolls',
-      new Cliente(1, 'Gerdau Summit'),
-      new Tribo('Triforce', null),
+      'LiveOn',
+      new Cliente(1, 'FCA'),
+      new Tribo('Suricatos', null),
       [
-        new Colaborador(1, 'Rogger', 'dev'),
-        new Colaborador(2, 'Marcus', 'dev'),
-        new Colaborador(3, 'Rodolfo', 'dev'),
-        new Colaborador(4, 'Felipe Rocha', 'dev')
+        new Colaborador(0, 'Ana Flávia', 'dev'),
+        new Colaborador(14, 'Giovanna', 'dev')
       ],
       [
-        new Tecnologia('React', 'react'),
-        new Tecnologia('Java', 'java'),
-        new Tecnologia('Spring Boot', 'springboot'),
-        new Tecnologia('Python', 'python'),
-        new Tecnologia('AWS', 'aws'),
-        new Tecnologia('SQL DB', 'sqldb')
+        new Tecnologia('Android', 'android'),
+        new Tecnologia('Kotlin', 'kotlin'),
+        new Tecnologia('Swift', 'swift'),
+        new Tecnologia('iOS', 'ios')
       ],
       ''
     ),
     new Squad(
       2,
-      'TOL',
-      new Cliente(2, 'Tribanco'),
-      new Tribo('Triforce', null),
+      'FCA Press',
+      new Cliente(1, 'FCA'),
+      new Tribo('Suricatos', null),
       [
-        new Colaborador(5, 'Júlio', 'dev'),
-        new Colaborador(6, 'Lucas Assis', 'dev'),
-        new Colaborador(8, 'Luiz', 'dev')
+        new Colaborador(26, 'Victor', 'dev'),
+        new Colaborador(21, 'Maria', 'dev'),
+        new Colaborador(12, 'Gabriel Meireles', 'dev')
       ],
       [
         new Tecnologia('React', 'react'),
         new Tecnologia('Java', 'java'),
-        new Tecnologia('Spring Boot', 'springboot'),
-        new Tecnologia('Websphere', 'websphere'),
-        new Tecnologia('SQL DB', 'sqldb'),
-        new Tecnologia('Oracle', 'oracle'),
-        new Tecnologia('Sybase', 'sybase')
+        new Tecnologia('Spring Boot', 'springboot')
       ],
       ''
     ),
     new Squad(
       3,
-      'Empresarial',
-      new Cliente(3, 'Tricard'),
-      new Tribo('Triforce', null),
+      'Easy Tracking',
+      new Cliente(1, 'FCA'),
+      new Tribo('Suricatos', null),
       [
-        new Colaborador(9, 'Luiz', 'dev'),
-        new Colaborador(10, 'Paula', 'dev'),
-        new Colaborador(11, 'Lucas Capellini', 'dev'),
-        new Colaborador(12, 'Aline', 'dev'),
-        new Colaborador(13, 'Joice', 'dev')
+        new Colaborador(25, 'Vinicius', 'dev'),
+        new Colaborador(8, 'Marcos', 'dev'),
+        new Colaborador(16, 'Isabella', 'dev')
       ],
       [
-        new Tecnologia('Angular JS', 'angular'),
+        new Tecnologia('React', 'react'),
         new Tecnologia('Java', 'java'),
-        new Tecnologia('Spring Boot', 'springboot'),
-        new Tecnologia('C Sharp', 'csharp'),
-        new Tecnologia('Visual Basic .NET', 'visualbasicnet'),
-        new Tecnologia('SQL DB', 'sqldb'),
-        new Tecnologia('Sybase', 'sybase')
+        new Tecnologia('Spring Boot', 'springboot')
       ],
       ''
     ),
     new Squad(
       4,
-      'Abertura de Conta PJ​',
-      new Cliente(4, 'Mercantil'),
-      new Tribo('Triforce', null),
+      'Jeep Nation - iJeep',
+      new Cliente(1, 'FCA'),
+      new Tribo('Suricatos', null),
       [
-        new Colaborador(14, 'Emerson', 'dev'),
-        new Colaborador(15, 'Eduardo', 'dev'),
-        new Colaborador(17, 'Robson', 'dev'),
-        new Colaborador(19, 'Tiago', 'dev')
+        new Colaborador(17, 'João Pedro', 'dev'),
+        new Colaborador(0, 'Pedro Menezes', 'dev'),
+        new Colaborador(0, 'Raphael', 'dev'),
+        new Colaborador(0, 'Caroline', 'dev'),
+        new Colaborador(0, 'Isabela Azevedo', 'mkt')
       ],
       [
-        new Tecnologia('.Net Framework', 'dotnetframework'),
-        new Tecnologia('ASP.Net Web Forms', 'aspnetwebforms')
+        new Tecnologia('Swift', 'swift'),
+        new Tecnologia('iOS', 'ios'),
+        new Tecnologia('Java', 'java'),
+        new Tecnologia('Spring Boot', 'springboot')
       ],
       ''
     ),
     new Squad(
       5,
-      'Mobile Banking​',
-      new Cliente(2, 'Tribanco'),
-      new Tribo('Triforce', null),
+      'Jeep Nation - JeepDroid',
+      new Cliente(1, 'FCA'),
+      new Tribo('Suricatos', null),
       [
-        new Colaborador(20, 'Silvério', 'dev'),
-        new Colaborador(21, 'Raphael', 'dev')
+        new Colaborador(0, 'Daniel', 'dev'),
+        new Colaborador(0, 'Heron', 'dev'),
+        new Colaborador(0, 'Caroline', 'dev'),
+        new Colaborador(0, 'Pedro Blanc', 'dev'),
+        new Colaborador(0, 'Isabela Azevedo', 'mkt')
       ],
       [
-        new Tecnologia('Kony', 'kony'),
+        new Tecnologia('Android', 'android'),
+        new Tecnologia('Kotlin', 'kotlin'),
         new Tecnologia('Java', 'java'),
-        new Tecnologia('Objective C', 'objectivec')
+        new Tecnologia('Spring Boot', 'springboot')
       ],
       ''
     ),
     new Squad(
       6,
-      'Boleta Única',
-      new Cliente(2, 'Tribanco'),
-      new Tribo('Triforce', null),
-      [new Colaborador(22, 'Jordann', 'dev')],
+      'Comercial',
+      new Cliente(1, 'FCA'),
+      new Tribo('Suricatos', null),
       [
-        new Tecnologia('Visual Basic .NET', 'visualbasicnet'),
-        new Tecnologia('SQL DB', 'sqldb'),
-        new Tecnologia('Sybase', 'sybase')
+        new Colaborador(13, 'Gabriel Pires', 'dev'),
+        new Colaborador(8, 'Marcos', 'dev'),
+        new Colaborador(2, 'Alexandre Brina', 'dev'),
+        new Colaborador(0, 'Bruno', 'dev'),
+        new Colaborador(0, 'Enock', 'dev')
+      ],
+      [
+        new Tecnologia('Visual Basic .NET', '0'),
+        new Tecnologia('SQL DB', '0'),
+        new Tecnologia('Sybase', '0')
       ],
       ''
     ),
     new Squad(
       7,
-      'App Portador',
-      new Cliente(2, 'Tribanco'),
-      new Tribo('Triforce', null),
-      [new Colaborador(23, 'João', 'dev')],
+      'Barramento',
+      new Cliente(1, 'FCA'),
+      new Tribo('Suricatos', null),
       [
-        new Tecnologia('Java', 'java'),
-        new Tecnologia('Spring Boot', 'springboot'),
-        new Tecnologia('Kotlin', 'kotlin'),
-        new Tecnologia('Swift', 'swift'),
-        new Tecnologia('Sybase', 'sybase')
+        new Colaborador(11, 'Francisco', 'dev'),
+        new Colaborador(5, 'Camila', 'dev'),
+        new Colaborador(7, 'Charles', 'dev')
+      ],
+      [
+        new Tecnologia('Visual Basic .NET', '0'),
+        new Tecnologia('SQL DB', '0'),
+        new Tecnologia('Sybase', '0')
+      ],
+      ''
+    ),
+    new Squad(
+      8,
+      'Carro Conectado',
+      new Cliente(1, 'FCA'),
+      new Tribo('Suricatos', null),
+      [new Colaborador(1, 'Allan', 'dev'), new Colaborador(4, 'Bruno', 'dev')],
+      [
+        new Tecnologia('Visual Basic .NET', '0'),
+        new Tecnologia('SQL DB', '0'),
+        new Tecnologia('Sybase', '0')
+      ],
+      ''
+    ),
+    new Squad(
+      9,
+      'Banco Fidis',
+      new Cliente(2, 'Banco Fidis'),
+      new Tribo('Suricatos', null),
+      [
+        new Colaborador(0, 'Pedro Blanc', 'dev'),
+        new Colaborador(24, 'Raquel', 'dev'),
+        new Colaborador(15, 'Guilherme', 'dev'),
+        new Colaborador(0, 'Enock', 'dev')
+      ],
+      [
+        new Tecnologia('Java', '0'),
+        new Tecnologia('Spring Boot', '0'),
+        new Tecnologia('Kotlin', '0'),
+        new Tecnologia('Swift', '0'),
+        new Tecnologia('Sybase', '0')
+      ],
+      ''
+    ),
+    new Squad(
+      10,
+      'Transf. Digital',
+      new Cliente(3, 'O Tempo'),
+      new Tribo('Suricatos', null),
+      [
+        new Colaborador(9, 'Diego', 'dev'),
+        new Colaborador(10, 'Estevão', 'dev'),
+        new Colaborador(3, 'Allyson', 'dev'),
+        new Colaborador(20, 'Marcus', 'dev'),
+        new Colaborador(6, 'Iana', 'dev')
+      ],
+      [
+        new Tecnologia('Java', '0'),
+        new Tecnologia('Spring Boot', '0'),
+        new Tecnologia('Kotlin', '0'),
+        new Tecnologia('Swift', '0'),
+        new Tecnologia('Sybase', '0')
       ],
       ''
     )
@@ -149,17 +204,16 @@ export class SquadsService {
   private squadApoio: SquadApoio = new SquadApoio(
     'Cross',
     [
-      new Colaborador(24, 'Lucas Kneipp', 'gc'),
-      new Colaborador(25, 'Alice', 'rh'),
-      new Colaborador(26, 'Gabriela', 'rh'),
-      new Colaborador(27, 'Adriano', 'mkt'),
-      new Colaborador(28, 'Ziza', 'mkt')
+      new Colaborador(22, 'Matheus', 'dev'),
+      new Colaborador(0, 'Bruna', 'rh'),
+      new Colaborador(0, 'Eduardo', 'mkt'),
+      new Colaborador(18, 'Lud', 'gc'),
+      new Colaborador(0, 'Túlio', 'mkt')
     ],
     [
-      new Cliente(1, 'Gerdau Summit', 'gerdausummit', [], 1, 4, []),
-      new Cliente(2, 'Tribanco', 'tribanco', [], 4, 8, []),
-      new Cliente(3, 'Tricard', 'tricard', [], 1, 5, []),
-      new Cliente(4, 'Mercantil', 'mercantilbrasil', [], 1, 5, [])
+      new Cliente(1, 'FCA', '0', [], 8, 25, []),
+      new Cliente(2, 'Banco Fidis', '0', [], 1, 3, []),
+      new Cliente(3, 'O Tempo', '0', [], 1, 5, [])
     ]
   );
 
@@ -221,7 +275,7 @@ export class SquadsService {
   }
 
   private obterRitosSquads() {
-    const rangeTribo = 'Triforce';
+    const rangeTribo = 'Suricatos';
 
     const colunas = {
       nome: 1,

@@ -20,14 +20,14 @@ export const environment = {
   apiKey: 'AIzaSyDfWbHv7mPzO8TPuYi2PPvTZ_KXfL9UYF4',
   spreadsheetIdRitos: '19ZBFnBBTBPInGoXyVf2ImRm4d9IUYv_h2jELR1jTKfA',
   spreadsheetIdConfiguracoes: '1mMKvGX49js5-Z1JBq_3tBuPdtPclDwo3L7abbLBnuO4',
-  spreadsheetIdBurndown: '108jumL8Xylg4iApCxt7ywWnYo6HM1pMip4l9IitKYCI',
+  spreadsheetIdBurndown: '1kNVD6NW8ng78SY5NePIe4UtWGyCR9lBduLKVpUxyEoE',
   rangeFatosRelevantes: 'Fatos Relevantes',
-  rangeBurndown: 'Burndown GAV',
+  rangeBurndown: 'Burndown',
   rangeAcoes: 'Ações GAV',
   rangeSpreadsheetId: 'squads',
   rangeEventos: 'eventos',
   tempoAtualizacao: 600000,
-  oneOnOne: 'http://one-on-ones-dti.herokuapp.com/api/data_tribe/{tribo}'
+  oneOnOne: 'http://one-on-ones-dti.herokuapp.com/api/porcentagem_por_tribo'
 };
 
 /*
