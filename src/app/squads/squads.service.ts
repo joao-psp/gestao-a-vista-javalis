@@ -211,7 +211,7 @@ export class SquadsService {
       new Colaborador(0, 'Túlio', 'mkt')
     ],
     [
-      new Cliente(1, 'FCA', '0', [], 8, 25, []),
+      new Cliente(1, 'FCA', 'fca', [], 8, 25, []),
       new Cliente(2, 'Banco Fidis', '0', [], 1, 3, []),
       new Cliente(3, 'O Tempo', '0', [], 1, 5, [])
     ]
