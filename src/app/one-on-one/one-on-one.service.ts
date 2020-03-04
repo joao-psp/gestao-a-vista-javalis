@@ -19,15 +19,6 @@ export class OneOnOneService {
       timeout(300000),
       map((resultado: any) => {
         console.log(resultado);
-        console.log(resultado.size);
-        resultado.forEach(element => {
-          if (element.get('title') == 'Suricatos') {
-            console.log('hsaushauhsuahsuh');
-            return new OneOnOne(resultado.tribeResult, resultado.name);
-          } else {
-            console.log('heheheh');
-          }
-        });
         return new OneOnOne(resultado.tribeResult, resultado.name);
       })
     );

@@ -71,7 +71,7 @@ export class SquadsService {
     ),
     new Squad(
       4,
-      'Jeep Nation - iJeep',
+      'iJeep',
       new Cliente(1, 'FCA'),
       new Tribo('Suricatos', null),
       [
@@ -322,11 +322,13 @@ export class SquadsService {
   }
 
   private obterBurndown(squad: Squad) {
+    console.log(squad.spreadsheetId + 'auhsu');
     return this.googleSpreadsheetsService
       .obterDados(squad.spreadsheetId, environment.rangeBurndown)
       .pipe(
         map((listaDados: { values: Array<any> }) => {
           const listaDadosSemHeader = this.obterListaSemHeader(listaDados);
+          console.log(listaDados);
           const numeroSprint = +listaDados.values[0][3];
           squad.burndown = Burndown.inicializar(
             numeroSprint,
